@@ -1,5 +1,5 @@
 # mail-queue
-A thin wrapper around iron-io/iron_mq_node for sending transactional emails.
+A thin wrapper around [iron-io/iron_mq_node](https://github.com/iron-io/iron_mq_node) for queuing up transactional emails.
 
 It does this:
 
@@ -7,7 +7,7 @@ It does this:
 - `JSON.parse()`s the response message body
 - Returns a Q promise
 
-The available email types and its payload can be found on fiestah/mailer.
+The available email types and its payload can be found on [fiestah/mailer](http://github.com/fiestah/mailer).
 
 
 ## Configure Once:
