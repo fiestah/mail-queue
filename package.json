@@ -1,0 +1,20 @@
+{
+  "name": "mail-queue",
+  "version": "0.0.1",
+  "description": "A thin wrapper around iron-io/iron_mq_node for sending transactional emails via IronMQ.",
+  "private": true,
+  "main": "mail-queue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fiestah/mail-queue.git"
+  },
+  "author": "Marvin Tam <marvin@fiestah.com>",
+  "license": "Private",
+  "dependencies": {
+    "iron_mq": "~0.2.0",
+    "q": "~0.9.6"
+  }
+}
