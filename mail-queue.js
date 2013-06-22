@@ -17,8 +17,10 @@ exports.post = function (payload) {
     return;
   }
 
-  var body = JSON.stringify(payload);
-  return Q.nbind(queue.post, queue)(body).fail(function (err) {
+  var json = JSON.stringify(payload);
+
+  console.log('mail-queue: POST', json);
+  return Q.nbind(queue.post, queue)(json).fail(function (err) {
     console.error('IronMQ error:', err.message, body);
   });
 };
