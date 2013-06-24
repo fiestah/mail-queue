@@ -21,7 +21,8 @@ exports.post = function (payload) {
 
   console.log('mail-queue: POST', json);
   return Q.nbind(queue.post, queue)(json).fail(function (err) {
-    console.error('IronMQ error:', err.message, json);
+    console.error('IronMQ error:', err.message, body);
+    throw err;
   });
 };
 
