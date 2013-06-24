@@ -1,6 +1,6 @@
 {
   "name": "mail-queue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A thin wrapper around iron-io/iron_mq_node for sending transactional emails via IronMQ.",
   "private": true,
   "main": "mail-queue.js",
