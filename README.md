@@ -7,7 +7,7 @@ It does this:
 - `JSON.parse()`s the response message body
 - Returns a Q promise
 
-The available email types and its payload can be found on [fiestah/mailer](http://github.com/fiestah/mailer).
+The available email types and its payload can be found on [fiestah/mailer](https://github.com/fiestah/mailer/tree/master/emails).
 
 
 ## Configure Once:
