@@ -3,12 +3,9 @@ var ironMq = require('iron_mq');
 var queue;
 
 exports.configure = function (options) {
-  options.host = options.host || 'mq-rackspace-ord.iron.io';
-
   var imq = new ironMq.Client({
     token: options.token,
-    project_id: options.projectId,
-    host: options.host
+    project_id: options.projectId
   });
 
   queue = imq.queue('Mail');
